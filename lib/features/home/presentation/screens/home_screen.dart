@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_map_task/features/google_map.dart';
+import 'package:flutter_map_task/handlers/google_map.dart';
 import 'package:flutter_map_task/handlers/location_handler.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';

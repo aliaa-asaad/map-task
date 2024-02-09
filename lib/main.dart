@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_map_task/features/addresses/data/view_models/cubit/location_cubit.dart';
+import 'package:flutter_map_task/features/addresses/presentation/screens/addresses_screen.dart';
 import 'package:flutter_map_task/features/home/data/view_model/cubit/home_cubit.dart';
 import 'package:flutter_map_task/features/home/presentation/screens/home_screen.dart';
 import 'package:flutter_map_task/routing/navigator.dart';
@@ -30,6 +32,9 @@ class MyApp extends StatelessWidget {
         BlocProvider<HomeCubit>(
           create: (BuildContext context) => HomeCubit(),
         ),
+        BlocProvider<LocationCubit>(
+          create: (BuildContext context) => LocationCubit()..getCurrentLocation(),
+        ),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -48,7 +53,7 @@ class MyApp extends StatelessWidget {
         ],
         supportedLocales: const [Locale("ar")],
         locale: const Locale("ar"), */
-        home: const HomeScreen(),
+        home: const AddressesScreen(),
       ),
     );
   }

@@ -9,7 +9,7 @@ class ThemeHelper {
     //scaffoldBackgroundColor: Color(0xfff9f2d5),
     fontFamily: 'Cairo',
     colorScheme: const ColorScheme.light(
-      primary: Color(0xff981A1E),
+      primary: Color(0xff056D38),
       secondary: Color(0xff283255),
       background: Color(0xff69A0C7),
       brightness: Brightness.light,

@@ -4,4 +4,5 @@ abstract class Routes {
 static const String characterDetails = "/character_details";
   static const String onboarding = "/onboarding";
   static const String placeDetails = "/place_details";
+  static const String addAddresses = "/add_addresses";
 }

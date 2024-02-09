@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_map_task/features/addresses/presentation/screens/add_address_screen.dart';
 import 'package:flutter_map_task/features/home/presentation/screens/home_screen.dart';
 import 'package:flutter_map_task/features/on_boarding/view/screens/on_boarding.dart';
 import 'package:flutter_map_task/features/place_details/presentation/screens/place_details_screen.dart';
@@ -22,8 +23,10 @@ class AppRoutes {
             builder: (context) => const OnBoardingScreen());
       case Routes.home:
         return AppRoutes.aniamtedNavigation(screen: const HomeScreen());
-case Routes.placeDetails:
+      case Routes.placeDetails:
         return AppRoutes.aniamtedNavigation(screen: const PlaceDetailsScreen());
+      case Routes.addAddresses:
+        return AppRoutes.aniamtedNavigation(screen: const AddAddressScreen());
       default:
         return AppRoutes.aniamtedNavigation(
             screen: const Scaffold(

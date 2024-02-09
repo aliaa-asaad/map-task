@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_map_task/utilities/images.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class PlaceDetailsScreen extends StatelessWidget {
   const PlaceDetailsScreen({super.key});
@@ -74,6 +76,11 @@ class PlaceDetailsScreen extends StatelessWidget {
             Image.network(
               'https://picsum.photos/200/300',
               // scale: 1,
+            ),
+            SvgPicture.asset(
+             ImagesHelper.emptyLocationIcon,
+              height: 100,
+              width: 100,
             ),
           ],
         ),

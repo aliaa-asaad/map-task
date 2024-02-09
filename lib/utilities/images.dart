@@ -1,6 +1,5 @@
 class ImagesHelper {
-  static const logo = 'assets/images/logo.png';
-  static const onBoarding1 = 'assets/images/on_boarding1.png';
-  static const search = 'assets/svg/search.svg';
-  static const loading = 'assets/images/loading.json';
+  static const emptyLocationIcon = 'assets/svg/empty_location_icon.svg';
+  static const locationIcon = 'assets/svg/location_icon.svg';
+  static const locationSolidIcon = 'assets/svg/location_solid_icon.svg';
 }
